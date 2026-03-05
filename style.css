@@ -384,56 +384,7 @@
     border: 0.1rem solid #e0e0e0;
     filter: grayscale(100%);
   }
-
-
-  /* FOMILE KONTAK */
-  /* .Manyak_fomile_kontak{
-    max-width: 600px;   /* an px l lan li edem mezire ke rem lan li pi fix rem lan sansib */
-    /* margin: 3rem auto;
-    padding: 2rem;
-    background: #f2f2f2;
-    border:0.1rem solid #e0e0e0;
-    border-radius: 1rem;
-    box-shadow:  0 0.5rem 1.5rem rgba(0,0,0,0.08);
-  } */ 
-
-  /* .Manyak_fomile_kontak h2{
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #1a1a1a;
-    font-weight: 700;
-    letter-spacing: 1px;
-  } */
-  /* form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-  } */
-  /* .form_group{
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #1a1a1a;
-  } */
-  /* .form_group input,.form_group textarea:focus {
-    outline: none;
-    border-color: #7a7a7a;
-  } */
-  /* .btn_submit{
-    background: #1a1a1a;
-    color: #ffffff;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background o.3s ease;
-
-  }
-  .btn_submit:hover{
-    background: #7a7a7a;
-  } */
-
-
+/* omilekontak li ye css*/
   .Manyak_fomile_kontak {
     max-width: 700px;
     margin: 3rem auto;
@@ -552,4 +503,5 @@
   .footer-section ul li a{
     color: #1a1a1a;
     text-decoration: none;
+
   }
