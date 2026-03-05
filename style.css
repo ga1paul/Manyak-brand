@@ -1,19 +1,4 @@
-/* style.css */
 
-/* varyab koule ke nou pral itilize an */
-  :root{
-
-     --bg: #ffffff;  /*koule backgroun prensipal*/
-    --text:#1a1a1a;  /* koule tex prensipal*/
-    --muted:#666666;  /* koule tex segonde */
-    --gray-100:#f2f2f2; /* koule gri leje */
-    --gray-300:#d9d9d9;  /* gri mwayen */
-    --gray-600:#7a7a7a;   /* gri fonse */
-    --border:#e0e0e0;     /*kule pou bar*/
-    --shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.08); /* efe lonbraj*/
-  }
-
-  /* html ak body */
   html{
     font-size:100%;       /* baz font-size */
     scroll-behavior: smooth;  /* scroll dous */
@@ -23,8 +8,8 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--text);
-    background: var(--bg);
+    color: #1a1a1a;
+    background: #ffffff;
     padding-top: 4rem;  /*espas navbar fix */
   }
 
@@ -35,8 +20,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--gray-100);
-    border-bottom: 0.1rem solid var(--border);
+    background: #f2f2f2;
+    border-bottom: 0.1rem solid #e0e0e0;
     z-index: 1000;
   }
   .Manyak_navbar{
@@ -174,8 +159,8 @@
     max-width: 80%;
     margin: 2rem auto;
     padding: 2rem;
-    background: var(--gray-100);
-    border: 0.1rem solid var(--border);
+    background: #f2f2f2;
+    border: 0.1rem solid #e0e0e0;
     border-radius: 1rem;
   }
   .kat_tit{
@@ -184,20 +169,20 @@
   }
   .kat_tex{
     font-size: 1rem;
-    color: var(--muted);
+    color: #666666;
   }
   .kat_bouton{
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 1rem;
-    border: 0.1rem solid var(--gray-300);
+    border: 0.1rem solid #d9d9d9;
     border-radius: 0.75rem;
     text-decoration: none;
-    color: var(--text);
+    color: #1a1a1a;
     font-weight: 600;
   }
   .kat_bouton:hover {
-    background: var(--gray-300);
+    background: #d9d9d9;
   }
     /* grid pwodui */
   .grid{
@@ -208,10 +193,10 @@
     gap: 1.5rem;
   }
   .card{
-    background: var(--bg);
-    border: 0.1rem solid var(--border);
+    background: #ffffff;
+    border: 0.1rem solid #e0e0e0;
     border-radius: 0.75rem;
-    box-shadow: var(--shadow);
+    box-shadow:  0 0.5rem 1.5rem rgba(0,0,0,0.08);
     overflow: hidden;
     text-align: center;
   }
@@ -228,7 +213,7 @@
   .card p {
     font-size: 1rem;
     margin: 0 1rem 1rem ;
-    color: var(--muted);
+    color: #666666;
   }
 
     /*  pati carousel */
@@ -396,7 +381,7 @@
     height: auto;
     object-fit: cover;
     border-radius: 0.75rem;
-    border: 0.1rem solid var(--border);
+    border: 0.1rem solid #e0e0e0;
     filter: grayscale(100%);
   }
 
@@ -406,16 +391,16 @@
     max-width: 600px;   /* an px l lan li edem mezire ke rem lan li pi fix rem lan sansib */
     /* margin: 3rem auto;
     padding: 2rem;
-    background: var(--gray-100);
-    border:0.1rem solid var(--border);
+    background: #f2f2f2;
+    border:0.1rem solid #e0e0e0;
     border-radius: 1rem;
-    box-shadow: var(--shadow);
+    box-shadow:  0 0.5rem 1.5rem rgba(0,0,0,0.08);
   } */ 
 
   /* .Manyak_fomile_kontak h2{
     text-align: center;
     margin-bottom: 1.5rem;
-    color: var(--text);
+    color: #1a1a1a;
     font-weight: 700;
     letter-spacing: 1px;
   } */
@@ -427,15 +412,15 @@
   /* .form_group{
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: var(--text);
+    color: #1a1a1a;
   } */
   /* .form_group input,.form_group textarea:focus {
     outline: none;
-    border-color: var(--gray-600);
+    border-color: #7a7a7a;
   } */
   /* .btn_submit{
-    background: var(--text);
-    color: var(--bg);
+    background: #1a1a1a;
+    color: #ffffff;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 0.5rem;
@@ -445,7 +430,7 @@
 
   }
   .btn_submit:hover{
-    background: var(--gray-600);
+    background: #7a7a7a;
   } */
 
 
@@ -534,10 +519,10 @@
   /*footer pye paj lan*/
 
   .manyak_pye{
-    background: var(--gray-100);
-    color: var(--text);
+    background: #f2f2f2;
+    color: #1a1a1a;
     padding: 2rem 1rem;
-    box-shadow: var(--shadow);
+    box-shadow:  0 0.5rem 1.5rem rgba(0,0,0,0.08);
   }
   .pati_pye{
     display: grid;
@@ -550,12 +535,12 @@
   .footer-section h4{
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: var(--text);
+    color: #1a1a1a;
   }
   .footer-section p , .footer-section ul {
     font-size: 0.95rem;
     line-height: 1.5;
-    color: var(--muted);
+    color: #666666;
   }
   .footer-section ul{
     list-style: none;
@@ -565,6 +550,6 @@
     margin-bottom: 0.5rem;
   }
   .footer-section ul li a{
-    color: var(--text);
+    color: #1a1a1a;
     text-decoration: none;
   }

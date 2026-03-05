@@ -1,18 +1,8 @@
-:root {
-    --bg: #f7f7f7;
-    --text: #222;
-    --muted: #555;
-    --card: #fff;
-    --line: #d9d9d9;
-    --accent: #333;
-    --radius: 0.625rem; /* 10px ≈ 0.625rem */
-  }
-  
   body {
     margin: 0;
     font-family: system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--text);
+    background: #ffffff;
+    color: #1a1a1a;
     line-height: 1.6;
   }
   
@@ -21,8 +11,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--muted);
-    border-bottom: 0.1rem solid var(--border);
+    background: #666666;
+    border-bottom: 0.1rem solid #e0e0e0;
     z-index: 1100;
   }
   .Manyak_navbar{
@@ -103,8 +93,8 @@
     margin: 2rem auto;
     padding: 8rem;
     /* top: 4rem; */
-    background: var(--gray-100);
-    border: 0.1rem solid var(--border);
+    background: #f2f2f2;
+    border: 0.1rem solid #e0e0e0;
     
     border-radius: 1rem;
     
@@ -126,7 +116,7 @@
   }
   
   summary::-webkit-details-marker {
-    color: var(--muted);
+    color: #666666;
   }
   
   details[open] {
@@ -136,14 +126,14 @@
   
   details p {
     margin: 0.625rem 0 0; /* 10px ≈ 0.625rem */
-    color: var(--muted);
+    color: #666666;
   }
   
   footer {
     text-align: center;
     padding: 2vh; /* 20px ≈ 2vh */
     font-size: 0.9rem;
-    color: var(--muted);
+    color: #666666;
     border-top: 0.0625rem solid var(--line); /* 1px ≈ 0.0625rem */
     background: #fafafa;
   }
