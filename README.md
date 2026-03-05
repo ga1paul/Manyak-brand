@@ -76,9 +76,9 @@ MANYAK_CO/
 
 ## 🛠️ Technologies utilisées
 
-- **HTML5** — Balises sémantiques (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<figure>`, `<nav>`)
-- **CSS3** — Flexbox, CSS Grid, Media Queries, transitions
-- **Aucun JavaScript** — Conformément aux consignes du devoir
+- **HTML5** Balises sémantiques (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<figure>`, `<nav>`)
+- **CSS3**  Flexbox, CSS Grid, Media Queries, transitions
+
 
 ---
 
