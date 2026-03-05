@@ -223,6 +223,64 @@
         </div>
     </main>
 
+        <!-- Modal pou detay pwodui -->
+<div id="product-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <span class="close-btn" aria-label="fèmen">&times;</span>
+      
+      <!-- Galeri imaj -->
+      <div class="modal-gallery">
+        <img src="images/download.jpg" alt="soulye devan">
+        <img src="images/download (2).jpg" alt="soulye bò kote">
+        <img src="images/download (3).jpg" alt="soulye dèyè">
+        <img src="images/download (4).jpg" alt="soulye anba">
+      </div>
+  
+      <!-- Detay pwodui -->
+      <div class="modal-details">
+        <h2>SOULIER</h2>
+        <p class="price">HTG 7,000</p>
+        <p class="desc">Konfo ak presizyon fini. Bon pou vil ak travay.</p>
+  
+        <!-- Koulè disponib -->
+        <div class="colors">
+          <span>Koulè:</span>
+          <button class="color-swatch" style="background: grey;"></button>
+          <button class="color-swatch" style="background: black;"></button>
+          <button class="color-swatch" style="background: brown;"></button>
+        </div>
+  
+        <!-- Gwosè disponib -->
+        <div class="sizes">
+          <span>Gwosè:</span>
+          <button class="size">39</button>
+          <button class="size">40</button>
+          <button class="size">41</button>
+          <button class="size">42</button>
+        </div>
+  
+        <button class="bouton bouton--primary">Achte Kounye a</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("product-modal");
+    const images = document.querySelectorAll(".card__media-wrapper img");
+    const closeBtn = document.querySelector(".close-btn");
+  
+    images.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.setAttribute("aria-hidden", "false");
+        modal.style.display = "block";
+      });
+    });
+  
+    closeBtn.addEventListener("click", () => {
+      modal.setAttribute("aria-hidden", "true");
+      modal.style.display = "none";
+    });
+  </script>
     <!--pye paj lan-->
     <footer role="contentinfo" aria-label="pye paj">
         <div class="tet">
@@ -230,4 +288,5 @@
         </div>
     </footer>
 </body>
+
 </html>
