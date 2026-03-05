@@ -66,19 +66,19 @@ MANYAK_CO/
 | Navbar  Navigation responsive avec menu hamburger (offcanvas CSS pur) 
 | Cards produits Cartes avec image hover, titre, description et prix |
 | Carrousel  Défilement horizontal de cards produits |
-| **Grille catégories** | Layout CSS Grid pour 4 catégories illustrées |
-| **Galeries** | Galeries photo par section (grid responsive) |
-| **Formulaire de contact** | Champs nom, email, sujet, message + bouton d'envoi |
-| **Accordéon FAQ** | Basé sur `<details>` / `<summary>` HTML natif |
-| **Footer** | Trois colonnes : À propos, Liens rapides, Contact |
+| Grille catégories | Layout CSS Grid pour 4 catégories illustrées |
+| Galeries | Galeries photo par section (grid responsive) |
+| Formulaire de contact | Champs nom, email, sujet, message + bouton d'envoi |
+| Accordéon FAQ | Basé sur `<details>` / `<summary>` HTML natif |
+| Footer | Trois colonnes : À propos, Liens rapides, Contact |
 
 ---
 
-## 🛠️ Technologies utilisées
+##  Technologies utilisées
 
-- **HTML5** Balises sémantiques (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<figure>`, `<nav>`)
-- **CSS3**  Flexbox, CSS Grid, Media Queries, transitions
-
+- HTML5 Balises sémantiques (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<figure>`, `<nav>`)
+- CSS3  Flexbox, CSS Grid, Media Queries, transitions
+-jvascript pour quelques satisfacions  
 
 ---
 
@@ -110,7 +110,7 @@ Le site s'adapte à trois breakpoints :
 | Qualité générale du code  10 pts 
 | TOTAL 100 pts 
 
-> **Bonus visés** : Variables CSS, animations CSS simples
+> Bonus visés: Variables CSS, animations CSS simples
 
 ---
 
