@@ -1,0 +1,325 @@
+/* baz koule nou itilize */
+:root{
+    --bg:#f7f7f7;  
+    --text:#222;
+    --muted:#666;
+    --card:#d9d9d9;
+    --accent:#3a3a3a;
+    --accent-2:#555;
+    --focus:#000;
+    --radius:0.825rem;
+    --shadow: 0 8px 24px rgba(0,0,0,0.08);
+
+}
+/* tipografi aranjman nan lot paj lan */
+html{
+    font-size: 1rem;
+}
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+}
+
+/* tet sit ak navigasyon sit lan */
+.tot{
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 10px;
+    margin: 3.125rem;
+}
+.tet{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.75rem;
+}
+
+
+.tet_sit{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--muted);
+    border-bottom: 0.1rem solid var(--accent-2);
+    z-index: 1100;
+  }
+  .Manyak_navbar{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+  }
+  .logo_manyak img {
+    height: 2.5rem;
+    width: auto;
+    filter: grayscale(100%);
+
+  }
+  .Manyak_link {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .offcanvas-toggle:checked .Manyak_link{
+    transform: translate(0);
+  }
+  .Manyak_link a{
+    text-decoration: none;
+    color:#222;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+  }
+  .Manyak_link a:hover{
+    background: #1f1f1f;
+    color: #f2f2f2;
+  }
+
+  /*hambuerger*/
+  .hamburger{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  .offcanvas-toggle{
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .hamburger{
+      display: block;
+    }
+    .Manyak_link{
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    
+      width: 70%;
+      background: #fff;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 4rem 1rem;
+      gap: 1rem;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+    .offcanvas-toggle:checked~.Manyak_link{
+      transform: translateX(0);
+    }
+    
+  }
+
+  /* pou ba rechech lan men css li anh */
+  .barechech {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2px;
+  }
+  .barechech input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+  }
+  .barechech button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+/* pwodui nan grill yo*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 22px;
+    align-items: start;
+}
+/* kolon responsif sou mobil lap 1,sou tablet lap 2, sou desktop lap 3*/
+.grid > *{
+    grid-column: span 12;
+}
+@media( min-width: 600px){
+    .grid > * { grid-column: span 6;}
+}
+@media (min-width: 960px){
+    .grid > * { grid-column: span 4;}
+}
+
+/* pwodui ki nan kat yo */
+.card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(line);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+.card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 o.75rem 1.75rem rgba(0,0,0,0.12);
+    border-color: #cfcfcf;
+}
+.card_media {
+    aspect-ratio: 4 / 3;/* kenbe imaj yo pwop */
+    background: #eee;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.card_body{
+    padding: 6rem;
+}
+.card_title {
+    margin: 0 0 6px 0;
+    font-size: 1.05rem;
+    color: #2a2a2a;
+}
+.card_desc {
+    margin: 0 0 o.75rem 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+.card_meta {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 0.75rem;
+    margin-top: auto;
+    padding: 0 1rem 1rem 1rem;
+}
+.price {
+    font-weight: 600;
+    color: red;
+}
+.bouton {
+    appearance: none;
+    border: 1px solid #444;
+    background: #fff;
+    color: #222;
+    padding: 0.625rem 0.875rem;   
+    border-radius: 62.44rem; /* komanse la pou chanje*/
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 160ms ease,color 160ms ease border-color 160ms ease, transform 120ms ease;
+}
+.bouton:hover {
+    background: #f2f2f2;
+    border-color: var(--accent-2);
+}
+.bouton:active {
+    transform: scale(0.98);
+}
+.bouton--primary {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+.bouton--primary:hover {
+    background: #2f2f2f;
+    border-color: #2f2f2f;
+}
+
+/* aksesibilite focus vizib sou sit lan*/
+:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px; /* an px l lan li edem mezire ke rem lan li pi fix rem lan sansib */
+    border-radius: 6px; /* an px l lan li edem mezire ke rem lan li pi fix rem lan sansib */
+}
+/* pye paj lan*/
+footer {
+    border-top: 1px solid var(--line);
+    background: #fafafa;
+    color: var(--muted);
+}
+footer .tet {
+    padding: 24px 20px; /* an px l lan li edem mezire ke rem lan li pi fix rem lan sansib */
+    font-size: 0.95rem;
+}
+
+/* pou efe hover le cursor lan pase li fe chanje imaj lan */
+/* .card__media-wrapper {
+  position: relative;
+ width: 100%;
+ height: 100%;
+ overflow: hidden; 
+}
+.card__media.img-default {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition 
+} */
+
+/* .card__media-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+.card__media.img-default{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition
+} */
+
+/* .card__media-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+.card__media.img-default {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition
+} */
+
+.card__media-wrapper {
+  position: relative;
+  display: inline-block; /* kenbe dimansyon imaj yo */
+}
+
+.card__media {
+  display: block;
+  width: 100%;
+  height: auto; /* kenbe rapò imaj yo */
+  transition: opacity 0.4s ease;
+}
+
+/* Default imaj vizib */
+.card__media.img-default {
+  opacity: 1;
+}
+
+/* Hover imaj kache pa default */
+.card__media.img-hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Efè hover */
+.card__media-wrapper:hover .img-default {
+  opacity: 0;
+}
+
+.card__media-wrapper:hover .img-hover {
+  opacity: 1;
+}
